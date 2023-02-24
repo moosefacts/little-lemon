@@ -40,30 +40,35 @@
 html { font-size: 22px; }
 body { padding: 1rem; }
 
+.Main {grid-area: main
+}
 
-
-.nav {
+.Nav {
   grid-area: nav;
 }
 
-.hero {
+.Hero {
   grid-area: hero;
+  background-color:#495E57;
 }
 
-.highlights {
+.Highlights {
   grid-area: highlights;
 }
 
-.testimonials {
+.Testimonials {
   grid-area: testimonials;
+  background-color:#495E57;
+  margin-bottom: 100px;
 }
 
-.about {
+.About {
   grid-area: about;
 }
 
-.footer {
+.Footer {
   grid-area: footer;
+  background-color:#495E57;
 }
 
 .box {
@@ -72,66 +77,74 @@ body { padding: 1rem; }
 
 .container{
   display: grid;
-  gap: 20px;
-  grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 250px repeat(12, 1fr);
+    grid-column-gap: 20px;
+    grid-template-rows: repeat(6, 1fr);
     grid-template-areas:
-      "nav hero hero"
-      "nav highlights highlights"
-      "nav testimonials testimonials"
-      "nav about about"
-      "footer footer footer";
-  }
-
-  nav ul {
-    flex-direction: column;
-  }
-
+    'nav nav nav nav nav nav nav nav nav nav nav nav'
+    'hero hero hero hero hero hero hero hero hero hero hero hero'
+    'highlights highlights highlights highlights highlights highlights highlights highlights highlights highlights highlights highlights'
+    'testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials'
+    'about about about about about about about about about about about about'
+    'footer footer footer footer footer footer footer footer footer footer footer footer';
+    }
 
 @media (min-width: 500px) {
   .container {
-    grid-template-columns: 1fr 4fr 1fr;
+    display: grid;
+    grid-template-columns: 250px repeat(12, 1fr);
+    grid-column-gap: 20px;
     grid-template-areas:
-      "nav hero hero"
-      "nav highlights highlights"
-      "nav testimonials testimonials"
-      "nav about about"
-      "footer footer footer";
+    'nav nav nav nav nav nav nav nav nav nav nav nav'
+    'hero hero hero hero hero hero hero hero hero hero hero hero'
+    'hero hero hero hero hero hero hero hero hero hero hero hero'
+    'highlights highlights highlights highlights highlights highlights highlights highlights highlights highlights highlights highlights'
+    'testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials'
+    'about about about about about about about about about about about about'
+    'footer footer footer footer footer footer footer footer footer footer footer footer';
   }
-  nav ul {
-    flex-direction: column;
-    justify-content: space-between;
+
+ ul > li {
+  display: inline-block;
+  text-align: center;
+  padding: 8px;
   }
 }
 
 @media (min-width: 700px) {
   .container {
-    grid-template-columns: 50px repeat(12, 1fr);
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
     grid-column-gap: 20px;
     grid-template-areas:
-      "box box nav nav nav"
-      "hero"
-      "highlights"
-      "testimonials"
-      "about"
-      "footer";
+    'nav nav nav nav nav nav nav nav nav nav . .'
+    'hero hero hero hero hero hero hero hero hero hero hero hero'
+    'hero hero hero hero hero hero hero hero hero hero hero hero'
+    '. . highlights highlights highlights highlights highlights highlights highlights highlights . .'
+    '. . highlights highlights highlights highlights highlights highlights highlights highlights . .'
+    '. . highlights highlights highlights highlights highlights highlights highlights highlights . .'
+    'testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials'
+    'about about about about about about about about about about about about'
+    'footer footer footer footer footer footer footer footer footer footer footer footer';
   }
 
-  li {
-    display: inline;
-    text-align: center;
-    padding: 8px
+ ul > li {
+  display: inline-block;
+  text-align: center;
+  padding: 8px;
   }
 }
 
 h1 {
-  font-family: 'Markazi Text';
+  font-family: 'Markazi Text Medium';
   display: block;
   font-size: 4em;
   margin-top: 0.67em;
   margin-bottom: 0.67em;
   margin-left: 0;
   margin-right: 0;
-  font-weight: bold
+  font-weight: bold;
+  color: #F4CE14;
 }
 
 h2 {
@@ -151,8 +164,8 @@ h3 {
   font-size: 1.5em;
   margin-top: 0.83em;
   margin-bottom: 0.83em;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 10px;
+  margin-right: 10px;
   font-weight: bold;
 }
 
@@ -179,7 +192,7 @@ h5 {
 }
 
 h6 {
-  font-family: 'Markazi Text';
+  font-family: 'Markazi Text Medium';
   display: block;
   font-size: .67em;
   margin-top: 2.33em;
@@ -191,4 +204,36 @@ h6 {
 
 p {
   font-family: 'Karla'
+}
+
+.logo{
+  width: 300px;
+  margin-left: 200px;
+  margin-right: 50px;
+}
+
+.welcome{
+  margin-left: 250px;
+}
+
+.rf{
+  float: right;
+  width:300px;
+  height: auto;
+  border-radius:16px;
+  margin-right:500px;
+}
+
+.specials {
+  background-color: #EDEFEE;
+  width: 3fr;
+  margin-bottom: 100px;
+}
+
+.reviews {
+  background-color: #EDEFEE;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 100px;
+  margin-left: 80px;
 }

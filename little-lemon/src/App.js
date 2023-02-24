@@ -13,22 +13,22 @@ function App() {
 
 
     <main class="container">
-      <div class="nav">
+      <div className="Nav">
         <Nav/>
       </div>
-      <div class="hero">
+      <div className="Hero">
         <Hero/>
       </div>
-      <div class="highlights">
+      <div className="Highlights">
         <Highlights/>
       </div>
-      <div class="testimonials">
+      <div className="Testimonials">
         <Testimonials/>
       </div>
-      <div class="about">
+      <div className="About">
         <About/>
       </div>
-      <div class="footer">
+      <div className="Footer">
         <Footer/>
       </div>
     </main>
