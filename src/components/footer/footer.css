@@ -1,0 +1,96 @@
+.footerContainer {
+  background-color:#495E57;
+  display: flex;
+  flex-direction: row;
+}
+
+.footerWrapper {
+  display: flex;
+  grid-template-columns: (3, 1fr);
+  grid-gap: 10%;
+  align-items: top;
+  flex-direction: row;
+  width: 98vw;
+  justify-content: center;
+  position: relative;
+  left: -5vw;
+}
+
+.footerLogo {
+  margin-left: 60px;
+  margin-top: 50px;
+  width: auto;
+  height: 30vh;
+  background-color: white;
+}
+
+.footerColumn {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.footerColumn > h1 {
+  font-size: 28px;
+  color: #EDEFEE;
+  font-weight: bold;
+}
+
+
+.navLinks,
+.contactDetails {
+  font-size: 22px;
+  color: #EDEFEE;
+  text-align: left;
+  display: block;
+  font-family: "Karla", "Sans Serif";
+  position: relative;
+  left: -2vw;
+}
+
+.navLinks>li,
+.contactDetails>li {
+  display: flex;
+  align-content: center;
+  margin: 1em;
+  position: relative;
+  top: -1.5em;
+  left: -1em
+}
+
+.smLinks>li {
+  display: flex;
+  align-content: center;
+  margin: 1em;
+  position: relative;
+  top: -1.5em;
+  left: 1.5em;
+}
+
+.contactDetails>li {
+  display: block;
+}
+
+.smLinks>li {
+  display: block;
+  justify-content: center;
+}
+
+.navHover:hover {
+  color: #f4ce14;
+  transition: 0.25s;
+}
+
+.navHoverSM:hover {
+  transition: 0.25s;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
+
+a:visited,
+Link:visited,
+a:link,
+Link:link {
+  text-decoration: none;
+  color:#EDEFEE;
+}

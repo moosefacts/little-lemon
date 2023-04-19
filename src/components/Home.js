@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Hero from "./Hero";
-import Footer from "./Footer";
-import Nav from "./Nav";
-import Highlights from "./Highlights";
-import Testimonials from "./Testimonials";
-import About from "./About";
+import Hero from "./hero/Hero";
+import Footer from "./footer/Footer";
+import Nav from "./nav/Nav";
+import Highlights from "./highlights/Highlights";
+import Testimonials from "./testimonials/Testimonials";
+import About from "./about/About";
 
 const Home = () => {
   return (

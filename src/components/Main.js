@@ -1,21 +1,29 @@
 import React from 'react';
-import {Routes, Route, BrowserRouter } from 'react-router-dom';
+import {Routes, Route, BrowserRouter, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-
-
+import Hero from "./hero/Hero";
+import Footer from "./footer/Footer";
+import Nav from "./nav/Nav";
+import Highlights from "./highlights/Highlights";
+import Testimonials from "./testimonials/Testimonials";
+import About from "./about/About";
 import BookingPage from './BookingPage';
 
 
 const Main = () => {
 
+    const navigate = useNavigate();
+    
     return(
 
-        <BrowserRouter>
-            <Routes>
-                <Route path="/BookingPage" element={<BookingPage/> }></Route>
-            </Routes>
-
-        </BrowserRouter>
+    <div class="container">
+        <Nav/>
+        <Hero/>
+        <Highlights/>
+        <Testimonials/>
+        <About/>
+        <Footer/>
+    </div>
     )
 
 }

@@ -1,3 +1,7 @@
+* {
+  font-family: "Markazi Text", "Karla", serif;
+}
+
 .App {
   text-align: center;
 }
@@ -40,207 +44,40 @@
 html { font-size: 22px; }
 body { padding: 1rem; }
 
-.Main {grid-area: main
-}
 
-.Nav {
-  grid-area: nav;
-}
-
-.Hero {
-  grid-area: hero;
-  background-color:#495E57;
-}
-
-.Highlights {
-  grid-area: highlights;
-}
-
-.Testimonials {
-  grid-area: testimonials;
-  background-color:#495E57;
-  margin-bottom: 100px;
-}
-
-.About {
-  grid-area: about;
-}
-
-.Footer {
-  grid-area: footer;
-  background-color:#495E57;
-}
-
-.box {
-  grid-area: box;
-}
-
-.container{
+menu {
+  list-style: none;
   display: grid;
-    grid-template-columns: 250px repeat(12, 1fr);
-    grid-column-gap: 20px;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas:
-    'nav nav nav nav nav nav nav nav nav nav nav nav'
-    'hero hero hero hero hero hero hero hero hero hero hero hero'
-    'highlights highlights highlights highlights highlights highlights highlights highlights highlights highlights highlights highlights'
-    'testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials'
-    'about about about about about about about about about about about about'
-    'footer footer footer footer footer footer footer footer footer footer footer footer';
-    }
+}
 
-@media (min-width: 500px) {
-  .container {
+.mobile {
+  display: none;
+}
+
+.closed {
+  display: none;
+  grid-template-columns: 5fr 1fr;
+}
+
+@media screen and (max-width: 600px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
     display: grid;
-    grid-template-columns: 250px repeat(12, 1fr);
-    grid-column-gap: 20px;
-    grid-template-areas:
-    'nav nav nav nav nav nav nav nav nav nav nav nav'
-    'hero hero hero hero hero hero hero hero hero hero hero hero'
-    'hero hero hero hero hero hero hero hero hero hero hero hero'
-    'highlights highlights highlights highlights highlights highlights highlights highlights highlights highlights highlights highlights'
-    'testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials'
-    'about about about about about about about about about about about about'
-    'footer footer footer footer footer footer footer footer footer footer footer footer';
+    grid-template: auto auto auto auto auto auto auto / auto;
+    align-items: center;
+    padding-left: 0;
   }
 
- ul > li {
-  display: inline-block;
-  text-align: center;
-  padding: 8px;
-  }
-}
-
-@media (min-width: 700px) {
-  .container {
+  .closed {
     display: grid;
-    grid-template-columns: repeat(12, [col-start] 1fr);
-    grid-column-gap: 20px;
-    grid-template-areas:
-    'nav nav nav nav nav nav nav nav nav nav . .'
-    'hero hero hero hero hero hero hero hero hero hero hero hero'
-    'hero hero hero hero hero hero hero hero hero hero hero hero'
-    '. . highlights highlights highlights highlights highlights highlights highlights highlights . .'
-    '. . highlights highlights highlights highlights highlights highlights highlights highlights . .'
-    '. . highlights highlights highlights highlights highlights highlights highlights highlights . .'
-    'testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials'
-    'about about about about about about about about about about about about'
-    'footer footer footer footer footer footer footer footer footer footer footer footer';
+  }
+
+  .closed > img {
+    margin-top: 1.5rem;
+    margin-left: 0.5rem;
   }
 }
 
- ul > li {
-  display: inline-block;
-  text-align: center;
-  padding: 8px;
-  }
-
-
-h1 {
-  font-family: 'Markazi Text Medium';
-  display: block;
-  font-size: 4em;
-  margin-top: 0.67em;
-  margin-bottom: 0.67em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
-  color: #F4CE14;
-}
-
-h2 {
-  font-family: 'Markazi Text';
-  display: block;
-  font-size: 3em;
-  margin-top: 0.83em;
-  margin-bottom: 0.83em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
-}
-
-h3 {
-  font-family: 'Markazi Text';
-  display: block;
-  font-size: 1.5em;
-  margin-top: 0.83em;
-  margin-bottom: 0.83em;
-  margin-left: 10px;
-  margin-right: 10px;
-  font-weight: bold;
-}
-
-h4 {
-  font-family: 'Markazi Text';
-  display: block;
-  font-size: 1em;
-  margin-top: 1.33em;
-  margin-bottom: 1.33em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
-}
-
-h5 {
-  font-family: 'Markazi Text';
-  display: block;
-  font-size: .83em;
-  margin-top: 1.67em;
-  margin-bottom: 1.67em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
-}
-
-h6 {
-  font-family: 'Markazi Text Medium';
-  display: block;
-  font-size: .67em;
-  margin-top: 2.33em;
-  margin-bottom: 2.33em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
-}
-
-p {
-  font-family: 'Karla'
-}
-
-.logo{
-  width: 300px;
-  margin-left: 200px;
-  margin-right: 50px;
-}
-
-.welcome{
-  margin-left: 250px;
-}
-
-.rf{
-  float: right;
-  width:300px;
-  height: auto;
-  border-radius:16px;
-  margin-right:500px;
-}
-
-.specials {
-  background-color: #EDEFEE;
-  width: 3fr;
-  margin-bottom: 100px;
-}
-
-.reviews {
-  background-color: #EDEFEE;
-  width: 300px;
-  height: 300px;
-  margin-bottom: 100px;
-  margin-left: 80px;
-}
-
-.Form {
-  display: grid;
-  max-width: 200px;
-  gap: 20px
-}

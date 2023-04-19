@@ -1,0 +1,39 @@
+.navMenu {
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+  }
+
+  .navMenu > li,
+  .navMenu > a,
+  .navMenu > Link {
+    text-align: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    grid: box;
+    display: grid;
+    flex-direction: column;
+  }
+
+  .menu {
+    margin-top: 1.5rem;
+  }
+
+  .hover:hover {
+    background-color: #f4ce14;
+    transition: 0.25s;
+  }
+  
+  .navLogo {
+    max-height: 4rem;
+    width: 300px;
+    margin-left: -1.25rem;
+  }
+
+
+a:visited,
+Link:visited,
+a:link,
+Link:link {
+  text-decoration: none;
+  color: black;
+}
