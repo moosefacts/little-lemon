@@ -1,0 +1,164 @@
+.bookingForm {
+    background-color:#EDEFEE;
+    color: #333333;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    font-family: 'Markazi';
+    font-size: 1rem;
+    border-radius: 30px;
+    width: 65vw;
+    margin: auto auto 2rem auto;
+    flex-direction: column
+    
+  }
+
+.bookingForm > h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: auto;
+  padding-top: 1.5rem;
+}
+  .formButton{
+    display: grid;
+    background-color: #F4CE14;
+    color: #333333;
+    font-weight: bold;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    font-family: 'Markazi Text';
+    margin: 1rem auto 1rem auto;
+    width: 8vw;
+    height: 3.5vh;
+    font-size: 1rem;
+    padding-top: 0.2rem;
+}
+
+input:focus:invalid {
+  border: 2px solid rgb(180, 20, 20);
+}
+
+
+.formLabel {
+    display: grid;
+    width: 20vw;
+    margin: auto;
+    font-size: 0.9rem;
+    padding: 0.35rem;
+}
+
+.formField {
+  display: grid;
+  width: 20vw;
+  height: 2.5vh;
+  margin: auto;
+}
+
+.commentField {
+  display: grid;
+  width: 20vw;
+  height: 10vh;
+  margin: -1rem auto auto auto;
+}
+
+.backgroundImage {
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.resMessage {
+    background-color: #495E57;
+    color:#EDEFEE;
+    padding: 0 1rem 0 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 24px;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+
+  .bookingForm {
+    background-color:#EDEFEE;
+    color: #333333;
+    display: flex;
+    gap: 0rem;
+    justify-content: center;
+    font-family: 'Markazi';
+    font-size: 1rem;
+    border-radius: 30px;
+    width: 100%;
+    margin: 1rem auto 0 auto;
+    flex-direction: column;
+  }
+
+  .bookingForm > h1 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: auto;
+    padding-top: 0.5rem;
+  }
+
+  .formLabel {
+    display: grid;
+    width: 70vw;
+    margin: auto;
+    font-size: 0.9rem;
+    padding: 0.35rem;
+}
+
+.formField {
+  display: grid;
+  width: 70vw;
+  height: 2.5vh;
+  margin: auto;
+}
+
+.commentField {
+  display: grid;
+  width: 70vw;
+  height: 10vh;
+  margin: -1rem auto auto auto;
+}
+
+.formButton{
+  display: grid;
+  background-color: #F4CE14;
+  color: #333333;
+  font-weight: bold;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  font-family: 'Markazi Text';
+  margin: 1rem auto 1rem auto;
+  width: 70vw;
+  height: 5vh;
+  font-size: 1rem;
+}
+
+.backgroundImage {
+  height: 70vh;
+  width: 100%;
+  object-fit: cover;
+  margin-top: 0.5rem;
+  
+}
+
+.resMessage {
+  background-color: #495E57;
+  color:#EDEFEE;
+  padding: 0 1rem 0 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 24px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+}

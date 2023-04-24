@@ -9,13 +9,15 @@ const Hero = () => {
     
     return(
         <div className="heroContainer">
-            <div>
+            <div className="column1">
                 <h1 className="heroHeader"> Little Lemon</h1>
                 <p className="heroP1">Chicago</p>
-                <p className="heroP2">We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
+                <p className="heroP2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla, nisi sed elementum fringilla, ligula leo scelerisque ligula, 
+                et fringilla tellus urna nec turpis.
+                </p>
                 <button className="bookButton" onClick={e => navigate("/BookingPage")}>Reserve a Table</button>
             </div>
-            <div>
+            <div className="column2">
                 <img src={RF} className="heroImg" alt="Little Lemon's Food"/>
             </div>
         </div>

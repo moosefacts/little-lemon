@@ -3,32 +3,31 @@
     align-items: center;
   }
 
-  .navMenu > li,
-  .navMenu > a,
-  .navMenu > Link {
-    text-align: center;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    grid: box;
-    display: grid;
-    flex-direction: column;
+.navMenu > li,
+.navMenu > a,
+.navMenu > Link {
+  text-align: center;
+  padding-left: 0.5rem;
+   padding-right: 0.5rem;
+   grid: box;
+   display: grid;
+   flex-direction: column;
   }
 
-  .menu {
-    margin-top: 1.5rem;
+.menu {
+   margin-top: 1.5rem;
   }
 
-  .hover:hover {
-    background-color: #f4ce14;
-    transition: 0.25s;
+.hover:hover {
+  background-color: #f4ce14;
+  transition: 0.25s;
   }
   
-  .navLogo {
-    max-height: 4rem;
-    width: 300px;
-    margin-left: -1.25rem;
-  }
-
+.navLogo {
+  max-height: 4rem;
+  width: 300px;
+  margin-left: -1.25rem;
+}
 
 a:visited,
 Link:visited,
@@ -36,4 +35,33 @@ a:link,
 Link:link {
   text-decoration: none;
   color: black;
+  }
+
+@media screen and (max-width: 600px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: grid;
+    grid-template: auto auto auto auto auto auto auto / auto;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .burger {
+    display: grid;
+  }
+
+  .burger > img {
+    margin-top: 1.5rem;
+    margin-left: 0.5rem;
+  }
+
+  .navLogo {
+    max-height: auto;
+    width: auto;
+    margin-left: 0rem;
+  }
+
 }

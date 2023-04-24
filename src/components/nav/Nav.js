@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 import Navigation from "./Navigation";
 import './nav.css';
 import Logo from '../../assets/Logo.svg';
@@ -18,7 +17,7 @@ export default function Nav () {
         <nav>
             <nav className="closed">
                 <img
-                    src={require("../../assets/Logo.svg")}
+                    src={Logo}
                     alt="Little Lemon Logo"
                     className="navLogo"
                 />

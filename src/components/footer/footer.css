@@ -17,8 +17,8 @@
 }
 
 .footerLogo {
-  margin-left: 60px;
-  margin-top: 50px;
+  margin-left: 3rem;
+  margin-top: 2.5rem;
   width: auto;
   height: 30vh;
   background-color: white;
@@ -91,6 +91,34 @@ a:visited,
 Link:visited,
 a:link,
 Link:link {
-  text-decoration: none;
-  color:#EDEFEE;
+  text-decoration: color;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .footerContainer {
+    background-color:#495E57;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footerWrapper {
+    display: flex;
+    align-items: top;
+    flex-direction: column;
+  }
+
+  .footerColumn {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+  }
+
+  .footerLogo {
+    margin: auto;
+    width: auto;
+    height: 30vh;
+    background-color: white;
+  }
 }

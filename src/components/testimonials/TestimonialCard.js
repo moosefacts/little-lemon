@@ -27,7 +27,7 @@ export default function TestimonialCard(props) {
             <div className="testimonialCard">
 
                 <h2>{props.names}</h2>
-                <img src={props.images}></img>
+                <img src={props.images} alt=""></img>
                 <h3>{props.reviews}</h3>
 
             </div>
@@ -35,59 +35,3 @@ export default function TestimonialCard(props) {
     );
 }
 
-/*
-
-<div className="testimonialCard">
-                <h2>Micheal Caldwell</h2>
-                <img src={Pablo}></img>
-                <p>"This is the best Mediterranean food that I've ever had!"</p>
-            </div>
-            <div className="testimonialCard">
-                <h2>Micheal Caldwell</h2>
-                <img src={PaulaRyan}></img>
-                <p>"This is the best Mediterranean food that I've ever had!"</p>
-            </div>
-            <div className="testimonialCard">
-                <h2>Micheal Caldwell</h2>
-                <img src={Annalise}></img>
-                <p>"This is the best Mediterranean food that I've ever had!"</p>
-            </div>
-            <div className="testimonialCard">
-                <h2>Micheal Caldwell</h2>
-                <img src={Micah}></img>
-                <p>"This is the best Mediterranean food that I've ever had!"</p>
-            </div>
-            <div className="testimonialCard">
-                <h2>Micheal Caldwell</h2>
-                <img src={DorothyNate}></img>
-                <p>"This is the best Mediterranean food that I've ever had!"</p>
-            </div>
-            <div className="testimonialCard">
-                <h2>Micheal Caldwell</h2>
-                <img src={Maria}></img>
-                <p>"This is the best Mediterranean food that I've ever had!"</p>
-            </div>
-            <div className="testimonialCard">
-                <h2>Micheal Caldwell</h2>
-                <img src={Linda}></img>
-                <p>"This is the best Mediterranean food that I've ever had!"</p>
-            </div>
-            */
-
-
-            /*
-             <div className="testimonialCard">
-                <ul>
-                    {names.map((name) => (<li key={name.id}><h2>{name}</h2></li>))}
-                    <img src={names[0]}></img>
-                    <p>"This is the best Mediterranean food that I've ever had!"</p>
-                </ul>
-            </div>
-            */
-
-            /*
-                <h2>{props.names}</h2>
-                <img src={props.images}></img>
-                <h3>{props.reviews}</h3>
-
-                */

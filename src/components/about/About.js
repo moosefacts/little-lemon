@@ -1,6 +1,5 @@
 import React from 'react';
 import Chef from '../../assets/restaurant chef B.jpg';
-import Food from '../../assets/Mario and Adrian b.jpg';
 import Medfeast from '../../assets/medfeast.jpg';
 import "./about.css"
 

@@ -1,120 +1,119 @@
-
 .testimonialContainer{
-  background-color:#495E57;
-  width: 80%;
-  height: 80%;
-  align-content: center;
+  display: grid;
   justify-content: center;
-  margin: auto;
-  border-radius: 16px;
+  padding: 0rem 5rem 2rem 5rem;
 }
 
 .testimonialContainer > h1 {
   text-align: center;
   font-size: 2rem;
-  padding: 20px;
+  margin: 2rem 0 1rem 0;
+  color:  #333333;
 }
 
-.carouselContainer {
-  width: 80vw;
-  display: flex;
-  flex-direction: column;
+.testimonialWrapper{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1vw;
+  align-items: center;
 }
 
-.carouselWrapper {
-  display: flex;
-  width: 100%;
-  position: relative;
-}
-/*
-
-.carouselContentWrapper {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-}
-*/
-.carouselContent{
-  display: flex;
-  transition: all 250ms linear;
-  -ms-overflow-style: none;  /* hide scrollbar in IE and Edge */
-  scrollbar-width: none;  /* hide scrollbar in Firefox */
+.testimonialCard {
+  background-color:#EDEFEE;
+  padding: 1rem 1rem 0 1rem;
+  width: 15vw;
+  height: 21vw;
+  border-radius: 16px;
 }
 
-/* hide scrollbar in webkit browser */
-.carousel-content::-webkit-scrollbar, .carousel-content::-webkit-scrollbar {
-  display: none;
-}
-
-.testimonialCarousel {
-  max-width: 100%;
-}
-
-
-  .testimonials {
-    padding: 0 5rem 2rem 5rem;
-    animation-duration: 0.33s;
-    animation-timing-function: ease-in-out;
-    animation-name: slideDownFade;
-  }
-
-  .testimonialCards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr;
-    grid-gap: auto;
-    align-items: center;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  .testimonialCard {
-    background-color: #EDEFEE;
-    padding: 1rem 1rem 0 1rem;
-    width: 22.33vw;
-  }
-
-  .testimonialCard > img {
-    width: contain;
-    height: 8rem;
-    object-fit: contain;
-  }
-
-
-  .leftArrow, .rightArrow {
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 48px;
-    height: 48px;
-    border-radius: 24px;
-    background-color: #F4CE14;
-    border: 1px solid #F4CE14;
-}
-
-.leftArrow {
-    left: 24px;
-    color: #333333;
-}
-
-.rightArrow {
-    right: 24px;
-    color: #333333;
-}
-
-.carouselContent.show-2 > * {
-  width: 50%;
-}
-
-.carouselContent.show-3 > * {
-  width: calc(100% / 3);
-}
-
-.carouselContent.show-4 > * {
-  width: calc(100% / 4);
+.testimonialCard > h2 {
+ display: grid;
+ color:  #333333;
+ margin: auto;
+ font-weight: bold;    
+ font-size: 1.5rem;
+ justify-content: center;
+ padding-bottom: 0.5rem;
 }
 
 .testimonialCard > h3 {
-  font-size: 24px;
+  display: grid;
+  color:  #333333;
+  font-size: 1vw;
+  font-style: oblique;   
+  justify-content: center;
+ }
+
+.testimonialCard > img {
+  display: grid;
+  width: 12rem;
+  height: auto;
+  object-fit: contain;
+  border-radius: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+
+}
+
+.testimonialCard:hover {
+  background-color: #f4ce14;
+  transition: 0.25s;
+}
+
+@media screen and (max-width: 600px) {
+
+  .testimonialWrapper{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+  }
+
+  .testimonialContainer > h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem 0;
+    color:  #333333;
+  }
+  
+  .testimonialCard {
+    background-color:#EDEFEE;
+    padding: 1rem 1rem 0 1rem;
+    width: 200px;
+    height: 300px;
+    border-radius: 16px;
+  }
+  
+  
+.testimonialCard > h2 {
+  display: grid;
+  color:  #333333;
+  margin: auto;
+  font-weight: bold;    
+  font-size: 1rem;
+  justify-content: center;
+  padding-bottom: 0.2rem;
+ }
+ 
+ .testimonialCard > h3 {
+   display: grid;
+   color:  #333333;
+   font-size: 16px;
+   font-style: oblique;   
+   justify-content: center;
+  }
+ 
+  .testimonialCard > img {
+    display: grid;
+    width: 8rem;
+    height: auto;
+    object-fit: contain;
+    border-radius: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  
+  }
+
 }

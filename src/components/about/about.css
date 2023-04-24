@@ -12,7 +12,6 @@
 
 .aboutHeader > h1 {
     font-family: 'Markazi Text';
-    display: flex;
     font-size: 40px;
     font-weight: bold;
     top: 1rem;
@@ -22,13 +21,11 @@
 
 .aboutHeader > h2 {
     font-family: 'Markazi Text';
-    display: flex;
     font-size: 24px;
     margin-left: 1rem;
 }
 
 .aboutText {
-    display: block;
     font-size: 18px;
 }
 
@@ -40,7 +37,7 @@
   }
   
   .aboutImages > img {
-    width: 40%;
+    max-width: 40%;
     height: 100%;
     object-fit: cover;
     border-radius: 16px;
@@ -60,4 +57,57 @@
     left: 5rem;
     transition: all .2s ease;
     overflow: hidden; 
+  }
+
+  @media screen and (max-width: 600px) {
+
+    .aboutContainer {
+      display: grid;
+      justify-content: left;
+      grid-template-columns: none;
+      align-items: left;
+      padding-left: 0;
+      padding-top: 0;
+    }
+  
+    .aboutHeader > h1 {
+      font-family: 'Markazi Text';
+      font-size: 40px;
+      font-weight: bold;
+      position: relative;
+      width: 150%;
+  }
+  
+  .aboutHeader > h2 {
+      font-family: 'Markazi Text';
+      font-size: 24px;
+      margin-left: 1rem;
+  }
+  
+  .aboutText {
+      font-size: 18px;
+      width: 150%
+  }
+
+  .aboutImages > img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 16px;
+  }
+  
+  .image1 {
+    position: absolute;
+    top: -2.5rem;
+    left: -1.5rem;
+    transition: all .2s ease;
+    overflow: hidden; 
+  }
+
+  .image2 {
+    position: relative;
+    top:-5rem;
+    left: 3rem;
+    transition: all .2s ease;
+    overflow: hidden; 
+  }
   }
