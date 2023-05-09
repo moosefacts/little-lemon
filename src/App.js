@@ -2,11 +2,12 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Main from "./components/Main";
-import BookingPage from "./components/booking/BookingPage";
-import AboutPage from "./components/about/AboutPage";
-import ConfirmedBooking from "./components/booking/ConfirmedBooking";
+import BookingPage from "./pages/BookingPage";
+import AboutPage from "./pages/AboutPage";
+import LoginPage from "./pages/LoginPage";
+import ConfirmedBooking from "./pages/ConfirmedBooking";
 import './App.css';
-import Menu from './components/Menu';
+import MenuPage from './pages/MenuPage';
 
 const App = () => {
   return (
@@ -15,10 +16,10 @@ const App = () => {
         <Route path="/" element={<Main/>} />
         <Route path="/BookingPage" element={<BookingPage/>} className="BookingPage" />
         <Route path="/Confirmation" element={<ConfirmedBooking/>} className="confirmedBooking" />
-        <Route path="/menu" element={<Menu />} />
+        <Route path="/menu" element={<MenuPage />} />
         <Route path="/about" element={<AboutPage />}/>
         <Route path="/order" />
-        <Route path="/login" />
+        <Route path="/login" element={<LoginPage />}/>
       </Routes>
     </BrowserRouter>
   );

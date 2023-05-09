@@ -1,10 +1,10 @@
 import React from 'react';
 import Navigation from "./Navigation";
-import './nav.css';
-import Logo from '../../assets/Logo.svg';
-import Hamburger from '../../assets/hamburger.png';
-import X from '../../assets/X.png';
+import Logo from '../assets/Logo.svg';
+import Hamburger from '../assets/hamburger.png';
+import X from '../assets/X.png';
 import { useState } from 'react';
+import { signIn, signOut, useSession } from "next-auth/react";
 
 export default function Nav () {
 

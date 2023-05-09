@@ -1,16 +1,15 @@
 import React from 'react';
-import Chef from '../../assets/restaurant chef B.jpg';
-import Medfeast from '../../assets/medfeast.jpg';
-import "./about.css"
+import Chef from '../assets/restaurant chef B.jpg';
+import Medfeast from '../assets/medfeast.jpg';
 
 
 
 const About = () => {
 
     return(
-        <article className="aboutContainer">
-            <section className="aboutHeader">
-                <h1> Little Lemon</h1>
+        <article className='grid grid-cols-5 bg-little_lemon_green rounded-xl my-6 w-screen'>
+            <section className='p-10 text-little_lemon_gray-light col-span-3'>
+                <h1 className='text-bold text-xl text-little_lemon_yellow static'> Little Lemon</h1>
                 <h2>Chicago</h2>
                 <p className="aboutText">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -34,9 +33,9 @@ const About = () => {
                      qui dolorem eum fugiat quo voluptas nulla pariatur?"
                 </p>
                 </section>
-            <section className="aboutImages">
-                <img src={Medfeast} className="image1" alt="Little Lemon's Food"/>
-                <img src={Chef} className="image2" alt="Little Lemon's Food"/>
+            <section className='col-span-2'>
+                <img src={Medfeast} className='rounded-lg w-96 h-auto relative top-52 left-16' alt="Little Lemon's Food"/>
+                <img src={Chef} className='rounded-lg w-96 h-auto relative bottom-64' alt="Little Lemon's Food"/>
             </section>
         </article>
     )

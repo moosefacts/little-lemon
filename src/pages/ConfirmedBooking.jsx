@@ -1,8 +1,7 @@
 import React from 'react';
-import Footer from "../footer/Footer";
-import Nav from "../nav/Nav";
-import './bookingForm.css';
-import Confirmation from '../../assets/confirmation.jpg'
+import Footer from "../components/Footer";
+import Nav from "../components/Nav";
+import Confirmation from '../assets/confirmation.jpg'
 
 const ConfirmedBooking = () => {
   return (

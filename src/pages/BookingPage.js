@@ -1,9 +1,8 @@
 import React from 'react';
-import BookingForm from './BookingForm'
-import Nav from "../nav/Nav";
+import BookingForm from '../components/BookingForm'
+import Nav from "../components/Nav";
 import { useState, useReducer, useEffect } from 'react';
-import { fetchAPI } from "./bookingAPI";
-import './bookingForm.css';
+import { fetchAPI } from "../components/booking/bookingAPI";
 
 
 

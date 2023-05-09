@@ -48,26 +48,3 @@ menu {
   display: none;
   grid-template-columns: 5fr 1fr;
 }
-
-@media screen and (max-width: 600px) {
-  .desktop {
-    display: none;
-  }
-
-  .mobile {
-    display: grid;
-    grid-template: auto auto auto auto auto auto auto / auto;
-    align-items: center;
-    padding-left: 0;
-  }
-
-  .closed {
-    display: grid;
-  }
-
-  .closed > img {
-    margin-top: 1.5rem;
-    margin-left: 0.5rem;
-  }
-}
-

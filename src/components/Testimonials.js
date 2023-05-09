@@ -1,13 +1,12 @@
 import React from 'react';
-import Linda from '../../assets/linda.jpg';
-import Annalise from '../../assets/annalise.jpg';
-import DorothyNate from '../../assets/dorothy&nate.jpg';
-import Maria from '../../assets/maria.jpg';
-import Micah from '../../assets/micah.jpg';
-import Pablo from '../../assets/pablo.jpg';
-import PaulaRyan from '../../assets/paula&ryan.jpg';
-import MarkGiselle from '../../assets/mark&giselle.jpg';
-import "./testimonials.css";
+import Linda from '../assets/linda.jpg';
+import Annalise from '../assets/annalise.jpg';
+import DorothyNate from '../assets/dorothy&nate.jpg';
+import Maria from '../assets/maria.jpg';
+import Micah from '../assets/micah.jpg';
+import Pablo from '../assets/pablo.jpg';
+import PaulaRyan from '../assets/paula&ryan.jpg';
+import MarkGiselle from '../assets/mark&giselle.jpg';
 
 export default function Testimonials (props) {
 
@@ -24,48 +23,48 @@ export default function Testimonials (props) {
                   ];
   
     return(
-        <section className="testimonialContainer">
-            <h1> Testimonials </h1>
-             <section className="testimonialWrapper">
-                <div className="testimonialCard"> 
+        <section>
+            <h1 className='w-screen grid grid-cols-1 text-3xl text-bold text-center pt-8 pb-3'> Testimonials </h1>
+             <section className='grid grid-cols-4 content-center w-screen px-28'>
+                        <div className='bg-little_lemon_gray-light rounded-xl p-5 m-2 text-little_lemon_gray'> 
                             <h2>{names[0]}</h2>
                             <img src={MarkGiselle} alt=""/>
-                            <h3>{reviews[0]}</h3>
+                            <h3 className='text-sm'>{reviews[0]}</h3>
                         </div>
-                        <div className="testimonialCard"> 
+                        <div className='bg-little_lemon_gray-light rounded-xl p-5 m-2 text-little_lemon_gray'> 
                             <h2>{names[1]}</h2>
                             <img src={Pablo} alt=""/>
-                            <h3>{reviews[1]}</h3>
+                            <h3 className='text-sm'>{reviews[1]}</h3>
                         </div>
-                        <div className="testimonialCard"> 
+                        <div className='bg-little_lemon_gray-light rounded-xl p-5 m-2 text-little_lemon_gray'> 
                             <h2>{names[2]}</h2>
                             <img src={PaulaRyan} alt=""/>
-                            <h3>{reviews[2]}</h3>
+                            <h3 className='text-sm'>{reviews[2]}</h3>
                         </div>
-                        <div className="testimonialCard"> 
+                        <div className='bg-little_lemon_gray-light rounded-xl p-5 m-2 text-little_lemon_gray'> 
                             <h2>{names[3]}</h2>
                             <img src={Linda} alt=""/>
-                            <h3>{reviews[3]}</h3>
+                            <h3 className='text-sm'>{reviews[3]}</h3>
                         </div>
-                        <div className="testimonialCard"> 
+                        <div className='bg-little_lemon_gray-light rounded-xl p-5 m-2 text-little_lemon_gray'> 
                             <h2>{names[4]}</h2>
                             <img src={Annalise} alt=""/>
-                            <h3>{reviews[4]}</h3>
+                            <h3 className='text-sm'>{reviews[4]}</h3>
                         </div>
-                        <div className="testimonialCard"> 
+                        <div className='bg-little_lemon_gray-light rounded-xl p-5 m-2 text-little_lemon_gray'> 
                             <h2>{names[5]}</h2>
                             <img src={Micah} alt=""/>
-                            <h3>{reviews[5]}</h3>
+                            <h3 className='text-sm'>{reviews[5]}</h3>
                         </div>
-                        <div className="testimonialCard"> 
+                        <div className='bg-little_lemon_gray-light rounded-xl p-5 m-2 text-little_lemon_gray'> 
                             <h2>{names[6]}</h2>
                             <img src={DorothyNate} alt=""/>
-                            <h3>{reviews[6]}</h3>
+                            <h3 className='text-sm'>{reviews[6]}</h3>
                         </div>
-                        <div className="testimonialCard"> 
+                        <div className='bg-little_lemon_gray-light rounded-xl p-5 m-2 text-little_lemon_gray'> 
                             <h2>{names[7]}</h2>
                             <img src={Maria} alt=""/>
-                            <h3>{reviews[7]}</h3>
+                            <h3 className='text-sm'>{reviews[7]}</h3>
                         </div>
             </section>
         </section>
